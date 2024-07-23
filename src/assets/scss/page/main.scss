@@ -1,0 +1,234 @@
+header {
+  height: 6rem;
+  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+
+  .inner {
+    max-width: 175rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 10.9rem;
+    }
+  }
+
+  .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav_bar {
+    .nav_bar_memu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav_bar_item {
+      border-radius: 0.6rem;
+      a {
+        display: flex;
+        align-items: center;
+        padding: 0.7rem 1.2rem;
+        gap: 0.7rem;
+      }
+      .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+      &.n1 {
+        background: #e8f3ff;
+        color: #1b64da;
+      }
+      &.n2 {
+        background: #f2f4f6;
+        color: #4e5968;
+      }
+    }
+  }
+}
+
+section {
+  .inner {
+    max-width: 105rem;
+    margin: 0 auto;
+  }
+  .section_top {
+    margin: 2.4rem 0 4rem;
+    display: flex;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  .main_title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 5rem;
+  }
+  .tab_list {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 6rem;
+    z-index: 9999;
+    background: #fff;
+    li {
+      padding: 10px 20px;
+      &.on {
+        border-bottom: 2px solid #000;
+        a {
+          color: #000;
+          font-weight: 700;
+        }
+      }
+      a {
+        font-size: 1.7rem;
+        color: #4e5968;
+      }
+    }
+  }
+
+  .news_list {
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        &:hover {
+          h3.title {
+            color: #3182f6;
+          }
+        }
+      }
+      .news_cont {
+        width: 70%;
+        margin-right: 2rem;
+      }
+    }
+    .title {
+      font-size: 2rem;
+      color: #191f28;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      transition: all 0.3s;
+    }
+    .sub_title {
+      font-size: 1.5rem;
+      color: #4e5968;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    .date {
+      color: #4e5968;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+    .writer {
+      color: #4e5968;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .img_box {
+      img {
+        max-width: 15rem;
+        height: 9rem;
+        border-radius: 1rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.sub_img {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+}
+
+.top_btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+  &.show {
+    opacity: 1;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.post_desc {
+  .inner {
+    max-width: 70rem;
+    margin: 0 auto;
+
+    img {
+      border-radius: 1rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: rgb(51, 61, 75);
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 7rem;
+    }
+
+    a {
+      width: 20rem;
+      height: 5rem;
+      background: #1b64da;
+      color: #fff;
+      font-size: 1.7rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      border-radius: 1rem;
+    }
+  }
+}

@@ -4,6 +4,7 @@
     "@babel/core": "^7.24.9",
     "@babel/preset-env": "^7.24.8",
     "babel-jest": "^29.7.0",
+    "babel-loader": "^9.1.3",
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -18,9 +19,10 @@
   "scripts": {
     "test": "jest",
     "fmt:stylelint": "stylelint --fix \"src/assets/scss/**/*.scss\"",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "express": "^4.19.2",
     "github-label-sync": "^2.3.1"
   }
