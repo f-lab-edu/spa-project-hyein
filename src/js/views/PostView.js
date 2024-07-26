@@ -21,7 +21,7 @@ export default class extends AbstractView {
           <img src="/${product.image}" alt="${product.title}" />
           <h1>${product.title}</h1>
           <p>${product.subTitle}</p>
-          <a href="/" data_link>목록으로</a>
+          <a href="/" data_link class="list_btn">목록으로</a>
         </div>
       </section>
     `;

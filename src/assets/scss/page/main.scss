@@ -158,6 +158,18 @@ section {
     }
   }
 }
+.not_fount_page {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+}
 
 .sub_img {
   width: 80rem;
@@ -215,20 +227,20 @@ section {
       line-height: 1.6;
       margin-bottom: 7rem;
     }
-
-    a {
-      width: 20rem;
-      height: 5rem;
-      background: #1b64da;
-      color: #fff;
-      font-size: 1.7rem;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: auto;
-      border-radius: 1rem;
-    }
   }
+}
+
+a.list_btn {
+  width: 20rem;
+  height: 5rem;
+  background: #1b64da;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 1rem;
 }

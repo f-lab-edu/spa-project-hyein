@@ -2,6 +2,7 @@ import Post from './views/Post.js';
 import PostTech from './views/PostTech.js';
 import PostDesign from './views/PostDesign.js';
 import PostView from './views/PostView.js';
+import NotFound from './views/NotFound.js';
 
 // 경로를 입력으로 받아 정규 표현식으로 변환하는 함수
 const pathToRegex = path =>
@@ -18,6 +19,7 @@ const getParams = match => {
 const router = async () => {
   const routes = [
     { path: '/', view: Post },
+    { path: '/index.html', view: Post },
     { path: '/tech', view: PostTech },
     { path: '/design', view: PostDesign },
     { path: '/article/:id', view: PostView },
@@ -35,18 +37,17 @@ const router = async () => {
   let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
   if (!match) {
     match = {
-      route: routes[0],
+      route: { path: '/404', view: NotFound },
       isMatch: [location.pathname],
     };
   }
-
   // 선택된 뷰를 반환
   const view = new match.route.view(getParams(match));
   document.querySelector('#app').innerHTML = await view.getHtml();
 };
 
 // URL 탐색 기능
-const navigateTo = url => {
+const navigateTo = async url => {
   history.pushState(null, null, url);
   router();
 };
@@ -65,3 +66,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   router();
 });
+
+export { navigateTo };

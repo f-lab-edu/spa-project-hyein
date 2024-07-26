@@ -144,6 +144,19 @@ section .news_list .img_box img {
      object-fit: cover;
 }
 
+.not_fount_page {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  align-items: center;
+}
+.not_fount_page h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
 .sub_img {
   width: 80rem;
   margin: 0 auto;
@@ -196,7 +209,8 @@ section .news_list .img_box img {
   line-height: 1.6;
   margin-bottom: 7rem;
 }
-.post_desc .inner a {
+
+a.list_btn {
   width: 20rem;
   height: 5rem;
   background: #1b64da;
