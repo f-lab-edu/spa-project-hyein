@@ -1,5 +1,5 @@
 import AbstractView from './AbstractView.js';
-import { getData } from './getData.js';
+import { getData } from '../api/getData.js';
 
 export default class extends AbstractView {
   constructor(params) {

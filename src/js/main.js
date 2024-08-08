@@ -1,13 +1,22 @@
-const topBtn = document.querySelector('.top_btn');
-
-topBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    topBtn.classList.add('show');
-  } else {
-    topBtn.classList.remove('show');
+class ScrollManager {
+  constructor(buttonSelector) {
+    this.topBtn = document.querySelector(buttonSelector);
+    this.init();
   }
-});
+
+  init() {
+    this.topBtn.addEventListener('click', () => this.scrollToTop());
+    window.addEventListener('scroll', () => this.toggleButtonVisibility());
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  toggleButtonVisibility() {
+    this.topBtn.classList.toggle('show', window.scrollY > 100);
+  }
+}
+
+// Initialize ScrollManager
+new ScrollManager('.top_btn');
