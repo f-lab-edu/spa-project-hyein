@@ -29,3 +29,12 @@ jobs:
 
       - name: Upload test results
         if: failure()
+
+      - name: Run Prettier check
+        run: npm run format:check
+
+      - name: Run Stylelint
+        run: npm run styles:check
+
+      - name: Run ESLint
+        run: npm run lint:check
