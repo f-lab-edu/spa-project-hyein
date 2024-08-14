@@ -20,3 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigate = new Navigate(router);
   navigate.initializeNavigation();
 });
+
+export const navigateTo = url => {
+  const router = Router.init(routes);
+  const navigate = new Navigate(router);
+  navigate.navigateTo(url);
+};
