@@ -1,5 +1,5 @@
-import AbstractView from './AbstractView.js';
-import { getData } from '../api/getData.js';
+import { getData } from '@api/getData';
+import AbstractView from '@abstract';
 
 const TAB_LIST_HTML = `
   <ul class="tab_list">

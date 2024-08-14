@@ -1,5 +1,5 @@
-import AbstractView from './AbstractView.js';
-import { getData } from '../api/getData.js';
+import { getData } from '@api/getData';
+import AbstractView from '@abstract';
 
 export default class extends AbstractView {
   constructor(params) {
@@ -10,10 +10,8 @@ export default class extends AbstractView {
   async getHtml() {
     const data = await getData();
     const combinedData = [...data.tech, ...data.design];
-
-    const product_id = Number(this.params.i);
-
-    const product = combinedData.find(item => item.id === product_id);
+    const productId = this.params.id;
+    const product = combinedData.find(item => item.id === productId);
 
     return `
       <section class="post_desc">

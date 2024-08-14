@@ -1,10 +1,10 @@
-import Router from './router.js';
-import Navigate from './navigate.js';
-import Post from './views/Post.js';
-import PostTech from './views/PostTech.js';
-import PostDesign from './views/PostDesign.js';
-import PostView from './views/PostView.js';
-import NotFound from './views/NotFound.js';
+import Router from '@router';
+import Navigate from '@navigate';
+import Post from '@views/Post';
+import PostTech from '@views/PostTech';
+import PostDesign from '@views/PostDesign';
+import PostView from '@views/PostView';
+import NotFound from '@views/NotFound';
 
 const routes = [
   { path: '/', view: Post },
