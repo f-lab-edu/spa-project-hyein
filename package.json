@@ -33,7 +33,7 @@
     "lint": "eslint \"src/**/*.js\" --fix",
     "lint:check": "eslint \"src/**/*.js\"",
     "start": "concurrently \"node server.js\" \"json-server --watch src/data/posts.json --port 3000\"",
-    "build": "webpack --config webpack.config.mjs"
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "axios": "^1.7.2",

@@ -17,6 +17,7 @@ export default {
       '@views': path.resolve(__dirname, 'src/js/views'),
       '@api': path.resolve(__dirname, 'src/js/api'),
       '@abstract': path.resolve(__dirname, 'src/js/views/AbstractView.js'),
+      '@component': path.resolve(__dirname, 'src/js/component'),
     },
     extensions: ['.js', '.json', '.scss'],
   },
