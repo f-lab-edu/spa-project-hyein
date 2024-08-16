@@ -1,8 +1,7 @@
 import http from 'http';
 import { promises as fs } from 'fs';
-import { URL } from 'url';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, URL } from 'url';
 
 const __filename = fileURLToPath(import.meta.url); // 현재 모듈의 파일명을 가져옴
 const __dirname = path.dirname(__filename); // 현재 모듈의 디렉토리명을 가져옴

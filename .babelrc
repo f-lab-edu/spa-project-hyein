@@ -10,7 +10,8 @@
           "@navigate": "./src/js/navigate.js",
           "@views": "./src/js/views",
           "@api": "./src/js/api",
-          "@abstract": "./src/js/views/AbstractView.js"
+          "@abstract": "./src/js/views/AbstractView.js",
+          "@component": "./src/js/component"
         }
       }
     ]

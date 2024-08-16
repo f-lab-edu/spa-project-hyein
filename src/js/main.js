@@ -19,4 +19,5 @@ class ScrollManager {
 }
 
 // Initialize ScrollManager
-new ScrollManager('.top_btn');
+// new ScrollManager('.top_btn');
+const scrollManager = new ScrollManager('.top_btn');
