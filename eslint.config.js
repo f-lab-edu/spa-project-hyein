@@ -23,7 +23,6 @@ export default [
       camelcase: ['error', { properties: 'always' }],
       semi: ['error', 'always'],
       'no-use-before-define': ['error', { functions: false, classes: true }],
-      'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-duplicate-imports': 'error',
       'import/order': [
         'error',

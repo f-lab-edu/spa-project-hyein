@@ -1,10 +1,10 @@
 export async function getTechData() {
-  const response = await axios.get('http://localhost:3000/tech');
+  const response = await axios.get(`${process.env.API_URL}/tech`);
   return response.data;
 }
 
 export async function getDesignData() {
-  const response = await axios.get('http://localhost:3000/design');
+  const response = await axios.get(`${process.env.API_URL}/design`);
   return response.data;
 }
 
