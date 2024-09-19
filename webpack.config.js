@@ -1,5 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
+import Dotenv from 'dotenv-webpack';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,4 +23,5 @@ export default {
     extensions: ['.js', '.json', '.scss'],
   },
   mode: 'development',
+  plugins: [new Dotenv()],
 };
